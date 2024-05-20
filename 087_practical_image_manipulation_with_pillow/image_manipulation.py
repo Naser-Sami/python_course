@@ -1,6 +1,7 @@
 # -------------------------------------------------
 # -- Practical => Image Manipulation With Pillow --
 # -------------------------------------------------
+# https://realpython.com/image-processing-with-the-python-pillow-library/
 
 from PIL import Image
 
