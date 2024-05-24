@@ -23,3 +23,14 @@ print(hello('Naser', 29))
 print(say_hello.__name__)
 print(hello.__name__)
 print(type(hello))
+
+
+seq = ['soup','dog','salad','cat','great']
+
+# Using filter with a lambda function to get only words start with the letter 's'
+start_with_s = filter(lambda l: l.startswith('s'), seq)
+
+# Converting the filter object to a list
+seq_list = list(start_with_s)
+
+print(seq_list)

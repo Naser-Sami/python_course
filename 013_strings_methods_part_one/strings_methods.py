@@ -56,3 +56,38 @@ print(g.upper())
 # lower()
 h = "NasER"
 print(h.lower())
+
+
+def domain_get(email):
+    try:
+        # Split the email at the '@' character and return the second part
+        domain = email.split("@")[1]
+        return domain
+    except IndexError:
+        # Handle the case where there is no '@' in the email
+        return "Invalid Email Address"
+
+
+print(domain_get('user@domain.com'))
+
+
+def findDog(text : str) -> bool:
+    if text.__contains__('dog'):
+        return True
+    else:
+        return False
+
+
+print(findDog('Is there a dog here?'))
+
+count = 0
+
+
+def count_dog(text: str) -> int:
+    global count
+    count += text.lower().split().count('dog')
+
+    return count
+
+
+print(count_dog('This dog runs faster than the other dog dude!'))
